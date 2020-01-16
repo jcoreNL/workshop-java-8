@@ -1,7 +1,5 @@
 package nl.jcore.java8demo.defaultmethods;
 
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 public interface DefaultMethodExample {
     void demonstrate();
 
@@ -11,7 +9,7 @@ public interface DefaultMethodExample {
     }
 
     default String demonstrateDefaultB() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 }
 
